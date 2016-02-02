@@ -1,16 +1,20 @@
 <head>
     <style type="text/css">
-        div {
+        #header {
+            text-align: center;
+        }
+
+        .content {
             height: 600px;            
             width: 250px;
             float: left;
-            
-            color: white; 
+
+            color: white;
             text-align: center;
         }
         
         #one {
-            background-color: red;        
+            background-color: red;
         }
         
         #two {
@@ -20,21 +24,35 @@
         #three {
             background-color: green;
         }
-    </style>    
+        
+        #container {
+            height: 1800px;
+            width: 750px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <!-- Our page is going to have a header and 3 columns, but it'll be static. -->
+
+    <div id="header">
+        <h1>Welcome to my webpage!</h1>
+        <p>Let's convert this webpage to bootstrap.</p>
+    </div>
     
-    <div id="one">
-        <h2>This is the red div</h2>
-        <p>Here's a bunch of awesome information about the color red. Did you know that roses are red?</p>
+    <div id="container">
+        <div class="content" id="one">
+            <h2>This is the red div</h2>
+            <p>Here's a bunch of awesome information about the color red. Did you know that roses are red?</p>
+        </div>
+        <div class="content" id="two">
+            <h2>This is the blue div</h2>
+            <p>Blue is probably my favorite color. But not really this color of blue. I like it when it's a slightly darker shade.</p>
+        </div>
+        <div class="content" id="three">
+            <h2>This is the green div</h2>
+            <p>Green is the color of vegetables. Do with that what you will.</p>
+        </div>
     </div>
-    <div id="two">
-        <h2>This is the blue div</h2>
-        <p>Blue is probably my favorite color. But not really this color of blue. I like it when it's a slightly darker shade.</p>
-    </div>
-    <div id="three">
-        <h2>This is the green div</h2>
-        <p>Green is the color of vegetables. Do with that what you will.</p>
-    </div>
+
 </body>
